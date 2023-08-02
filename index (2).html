@@ -1,0 +1,425 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>
+            Portfolio
+        </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    </head>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     .nav{
+       width:100%;
+        background-color:rgb(51, 96, 133);
+        font-family: sans-serif;
+        text-align:right;
+        position: fixed;
+        z-index: 100000;
+        margin-right: 2%;
+     } 
+     .menu{
+        margin-right: 2%;
+     }
+     #menuset a{
+      
+        text-decoration: none;
+        display: inline-block;
+        margin:20px;
+        color:white;
+        font-weight: bold;
+     }
+    #menuset a:hover{
+        margin: 0%;
+        padding: 20px 20px;
+        background-color: white;
+        color: rgb(51, 96, 133);
+      
+     }
+     span{
+        color:white;
+        font-size: 25px;
+        display:none;
+     } 
+    
+     @media only screen and (max-width:700px){
+        span{
+            display:block;
+            margin-right: 3%;
+        }
+        #menuset a{
+            display:block;
+            
+        }
+        #menuset {
+            display:none;
+        }
+        .cersec{
+            display:block;
+        }
+        
+     }
+     #home img{ 
+        height:250px;
+        width:250px;
+        position:absolute;
+        margin-top:150px;
+        margin-left:50%;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+     }
+     #name{
+        color:rgb(51, 96, 133);
+        position:absolute;
+        margin-top:300;
+        margin-left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+     }
+   
+     #about{
+       margin-top: 350px;
+       text-align: center;
+     }
+     #about h1{
+        text-align: center;
+        color:rgb(51, 96, 133);
+     }
+     #about img{
+    height:400px;
+    width:550px;
+    
+     }
+     #about p{
+       color:rgb(51, 96, 133);
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 25px;
+        font-family: sans-serif;
+     }
+     .skill h1{
+        color:rgb(51, 96, 133);
+        text-align: center;
+     }
+     
+     .skill ul{
+       font-size: 20px;
+       text-align: center;
+       color:rgb(51, 96, 133);
+        font-family: sans-serif;
+        display:flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+     
+     .button {
+        background-color: rgb(51, 96, 133);
+        text-align: center;
+        padding:20px 20px;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+     }
+     .button:hover{
+          padding: 22px 22px;
+     }
+     #project h1{
+        color:rgb(51, 96, 133);
+        text-align: center;
+     }
+     #project a{
+        display: flex;
+        margin-left:50%;
+        position: absolute;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 2%;
+        color:rgb(51, 96, 133);
+        font-size: 20px;
+        font-family: sans-serif;
+        text-decoration: none;
+     }
+     #contact{
+        font-weight: 100;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: black;
+        background-color: rgba(118, 109, 109, 0.407);
+        background-size: 100%;
+        margin-top: 400px;
+     }
+    #contact i{
+        margin-left: 5%;
+    }
+    ::-webkit-scrollbar{
+        width:12px;
+        height:12px;
+    }
+    ::-webkit-scrollbar{
+        background-color:lightgray; 
+    }
+    ::-webkit-scrollbar-thumb{
+        background:linear-gradient(transparent,rgb(51, 96, 133));
+        border-radius: 5px;
+    }
+    .java{
+           
+            margin-right: 20px;
+            border: 3px solid rgb(51, 96, 133);
+            border-radius: 10px;
+            background-color:rgb(51, 96, 133);
+            height:400px;
+            width:250px;
+            text-align: center;
+          
+            
+        }
+        .certificatehead{
+            color:rgb(51, 96, 133);
+            text-align: center;
+        }
+        .cersec{
+            display: flex;
+           left:50%;
+           position:absolute ;
+           transform: translateX(-50%);
+        }
+        .java img{
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 100px;
+            margin-top: 0%;
+             height: 200px;
+             width:250px;
+        }
+        .java p{
+            color:white;
+            font-size: 20px;
+            margin-left:2%;
+            margin-right: 2%;
+        }
+        .java a{
+        background-color:white;
+        padding:20px 20px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: rgb(51, 96, 133);
+       
+        }
+        .java a:hover{
+            padding:21px 21px; 
+        }
+
+
+        .secondcertificate{
+           
+            border: 3px solid rgb(51, 96, 133);
+            border-radius: 10px;
+            background-color:rgb(51, 96, 133);
+            height:400px;
+            width:250px;
+            text-align: center;
+            margin-right: 20px;
+            
+        }
+        .secondcertificate img{
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 100px;
+            margin-top: 0%;
+             height: 200px;
+             width:250px;
+        }
+        .secondcertificate p{
+            color:white;
+            font-size: 20px;
+
+        }
+        .secondcertificate a{
+        background-color:white;
+        padding:20px 20px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: rgb(51, 96, 133);
+       
+        }
+        .secondcertificate a:hover{
+            padding:21px 21px; 
+        }
+        
+
+
+
+        .sql{
+           
+            border: 3px solid rgb(51, 96, 133);
+            border-radius: 10px;
+            background-color:rgb(51, 96, 133);
+            height:400px;
+            width:250px;
+            text-align: center;
+            margin-right: 20px;
+            
+        }
+        .sql img{
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 100px;
+            margin-top: 0%;
+             height: 200px;
+             width:250px;
+        }
+        .sql p{
+            color:white;
+            font-size: 20px;
+
+        }
+        .sql a{
+        background-color:white;
+        padding:20px 20px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: rgb(51, 96, 133);
+       
+        }
+        .sql a:hover{
+            padding:21px 21px; 
+        }
+        .scroll{
+            background-color:white;
+            padding:40px 20px;
+         
+        }
+
+
+   </style> 
+ 
+    <body>
+        <div class="nav">
+            <div class="menu">
+                <span onclick="myfunction()">&#9776;</span>
+                <div id="menuset">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#project">PROJECT</a>
+                    <a href="#contact">CONTACT</a>
+                    <br>
+                </div>
+            </div>          
+        </div>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("menuset");
+            if(x.style.display=="block")
+            {
+                  x.style.display="none";
+            }
+            else{
+                x.style.display="block";
+                
+            }
+        }
+      
+    </script>
+   <br><br><br><br>
+   <div id="home"> 
+      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+   </div><br><br>
+   <div id="name">
+      <h1>SHEIK FAYAS G</h1>
+      <br>
+      <p>B.TECH.INFORMATION TECHNOLGY</p>
+    </div>
+    <br>
+        <div id="just">
+          <div id="about"><br>
+            <h1>ABOUT</h1> 
+            <br>
+            <div class="scroll">
+            <img src="https://www.genardmethod.com/hs-fs/hubfs/123RF_Photos_GG/108985130_M%20--%20123RF%20--%2011.14.19.jpg?width=848&name=108985130_M%20--%20123RF%20--%2011.14.19.jpg" ><br><br>
+            <p>I am an undergraduate student currently I have been pursuing my third year in B.Tech. degree in Information Technology in University College Of Engineering,BIT-campus,Tiruchirappalli.
+                And I'm interested in Full Stack And Software Engineering. I have certification in Programming In Java(NPTEL),Full stack development(GREAT LEARNING) and Sql Project For Beginners(GREAT LEARNING). 
+                And I have some skills relevant to those domain like (html,css,javascript,php,sql)
+            </p><br><br>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="button">
+           <a href="#" style="color:white;text-decoration: none;">DOWNLOAD RESUME</a>
+        </div><br><br><br><br>
+        <div class="skill">
+           <h1>SKILLS</h1><br><br>
+
+           <ul>
+               <li>PYTHON</li><br>
+               <li>JAVA</li><br>
+               <li>HTML</li><br>
+               <li>CSS</li><br>
+               <li>JAVASCRIPT</li><br>
+               <li>PHP</li><br>
+               <li>SQL</li>
+            </ul>
+        </div>
+  
+           <br><br><br>
+        <div id="project">
+           <div class="project">
+               <h1> SIMPLE PROJECT'S</h1><br>
+               <a href="#">WEB SITE FOR COLLEGE SYMPOSIUM</a><br><br>
+               <a href="file:///C:/Only%20Fayas/HTML/yes.html">LANDING PAGE - click</a><br><br>
+               <a href="file:///C:/Only%20Fayas/HTML/calculator.html">CALCULATOR - click</a><br><br>
+               <a href="file:///C:/Only%20Fayas/HTML/digitalclock.html">DIGITAL CLOCK - click</a><br><br>
+            </div>
+        </div>
+    <br><br><br>
+    <div class="certificatehead"><h1>CERTIFICATION'S</h1></div><br><br><br>
+    <div class="cersec">
+   <div class="java"> 
+        <img src="https://archive.nptel.ac.in/content/noc_assets/certificate_templates/Active_Certificate.jpg"><br><br><br>
+        <p>PROGRAMMING IN JAVA</p><br><br><br>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b4d58d57-b9d3-4d8d-a75c-24651392d3bc">view</a><br><br>
+    </div>
+    <div class="secondcertificate">
+        <img src="https://d1vwxdpzbgdqj.cloudfront.net/assets/enterprise/GL-Corporate-Certificate-0df0eec432b142a9eb566e5f35c0f1ffdb1f27f1105c163b3d01f51e840ba937.jpg"><br><br><br>
+        <p>FULL STACK DEVELOPMENT</p><br><br>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b4d58d57-b9d3-4d8d-a75c-24651392d3bc">view <br></a><br><br>
+    </div>
+    <div class="sql"> 
+        <img src="https://d1vwxdpzbgdqj.cloudfront.net/assets/enterprise/GL-Corporate-Certificate-0df0eec432b142a9eb566e5f35c0f1ffdb1f27f1105c163b3d01f51e840ba937.jpg"><br><br><br>
+        <p>SQL PROJECT FOR BEGINNER </p><br><br>
+        <a href="https://d1vwxdpzbgdqj.cloudfront.net/assets/enterprise/GL-Corporate-Certificate-0df0eec432b142a9eb566e5f35c0f1ffdb1f27f1105c163b3d01f51e840ba937.jpg">view</a><br><br>
+    </div>
+    </div>
+    <br><br>
+    <div id="contact"><br><br>
+        <p><i class="fa-sharp fa-solid fa-phone" ></i> <b>  Ph.no:</b>+91 8610635385</p><br><br>
+        <p><i class="fa-solid fa-location-dot"></i> <b> Location:</b>Trichy,Tamil Nadu</p><br><br>
+        <p><i class="fa-solid fa-envelope"></i> <b>  E-Mail:</b>sheikfayas19@gmail.com</p><br><br>
+        <p><i class="fa-brands fa-linkedin"></i><b>  Linked In:</b>Sheik Fayas</p><br><br>
+    </div>  
+    
+</body>
+</html>
